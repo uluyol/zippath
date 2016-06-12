@@ -41,6 +41,7 @@ func TestMatch(t *testing.T) {
 		{"*a", "a", true},
 		{"*a", "", false},
 		{"*a", "ab", false},
+		{"asd-*-*-*z", "asd-zczzxzxcvzxcv-zxcvzxcv-zxcvz", true},
 		{"/path/to*", "/path/to/z", true},
 		{"/path/to*", "/path/toloay", true},
 	}
